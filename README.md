@@ -1,4 +1,4 @@
-# KrypDo3
+# KryptoKat
 
 **Exploring, breaking, and securing — from code to networks.**
 
@@ -39,3 +39,26 @@ Security isn’t just about finding flaws — it’s about understanding systems
 ## Connect
 
 If you share my interests or have ideas worth exploring, feel free to open an issue, start a discussion, or collaborate on a project.
+
+---
+
+### PGP / Public key
+
+My public PGP key is available in this repository:
+
+[public key kryptokat@evilbitlabs.io](./publickey.kryptokat@evilbitlabs.io-eadec6acbe5bacae54c8613b110bf507b364e3c7.asc)
+
+### Importing & verifying this key
+
+You can import and verify the public key with GnuPG. Example commands for PowerShell / Windows:
+
+```powershell
+# Import the key into your keyring
+gpg --import .\publickey.kryptokat@evilbitlabs.io-eadec6acbe5bacae54c8613b110bf507b364e3c7.asc
+
+# Show the key and its fingerprint directly from the file (no import required)
+gpg --show-keys --with-fingerprint .\publickey.kryptokat@evilbitlabs.io-eadec6acbe5bacae54c8613b110bf507b364e3c7.asc
+
+# Or, after importing, list keys with fingerprints
+gpg --with-fingerprint --list-keys
+```
